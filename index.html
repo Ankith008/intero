@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="nav">
+    <div class="part1">
+      <img class="logo" src="logo.svg">
+      <div class="feat">
+        <div class="featuresfield">
+          <p>Features</p>
+          <img class="feacl" id="feaid" src="icon-arrow-down.svg">
+        </div>
+        <ul id="list" class="hide">
+          <li id="option">
+            <img src="icon-todo.svg">
+            <p>Todo List</p>
+          </li>
+          <li id="option">
+            <img src="icon-calendar.svg">
+            <p>Calender</p>
+          </li>
+          <li id="option">
+            <img src="icon-reminders.svg">
+            <p>Reminder</p>
+          </li>
+          <li id="option">
+            <img src="icon-planning.svg">
+            <p>Planning</p>
+          </li>
+        </ul>
+      </div>
+      <div class="Comp">
+        <div class="companyfield">
+          <p>Company</p>
+          <img class="comcl" id="comid" src="icon-arrow-down.svg">
+        </div>
+        <ul id="comlist" class="comhide">
+          <li id="options">
+            <p>History</p>
+          </li>
+          <li id="options">
+            <p>Our Team</p>
+          </li>
+          <li id="options">
+            <p>BLog</p>
+          </li>
+        </ul>
+      </div>
+      <div class="careers">
+        <p>Careers</p>
+      </div>
+      <div class="about">
+        <p>About</p>
+      </div>
+
+    </div>
+    <div class="part2">
+      <a class="login" href="#">
+        <p>Login</p>
+      </a>
+      <a class="register" href="#">
+        <p>Register</p>
+      </a>
+      <img class="toggle_btn" src="icon-menu.svg">
+    </div>
+  </div>
+  <div class="dropdown">
+    <div class="feat">
+      <div class="featuresfield">
+        <p>Features</p>
+        <img class="feacl" id="feaid" src="icon-arrow-down.svg">
+      </div>
+      <ul class="list hide">
+        <li id="option">
+          <img src="images/icon-todo.svg">
+          <p>Todo List</p>
+        </li>
+        <li id="option">
+          <img src="images/icon-calendar.svg">
+          <p>Calender</p>
+        </li>
+        <li id="option">
+          <img src="images/icon-reminders.svg">
+          <p>Reminder</p>
+        </li>
+        <li id="option">
+          <img src="images/icon-planning.svg">
+          <p>Planning</p>
+        </li>
+      </ul>
+    </div>
+    <div class="Comp">
+      <div class="companyfield">
+        <p>Company</p>
+        <img class="comcl" id="comid" src="icon-arrow-down.svg">
+      </div>
+      <ul class="comlist comhide">
+        <li id="options">
+          <p>History</p>
+        </li>
+        <li id="options">
+          <p>Our Team</p>
+        </li>
+        <li id="options">
+          <p>BLog</p>
+        </li>
+      </ul>
+    </div>
+    <div class="careers">
+      <p>Careers</p>
+    </div>
+    <div class="about">
+      <p>About</p>
+    </div>
+    <a class="login" href="#">
+      <p>Login</p>
+    </a>
+    <a class="register" href="#">
+      <p>Register</p>
+    </a>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="overlay"></div>
+    <div class="left">
+      <h1>Make </br>remote work</h1>
+      <p class="para">Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <a href="#">Learn more</a>
+      <div class="photoes">
+        <img src="client-audiophile.svg">
+        <img src="client-databiz.svg">
+        <img src="client-maker.svg">
+        <img src="client-meet.svg">
+      </div>
+    </div>
+    <div class="right">
+      <picture>
+        <source media="(min-width:826px)" srcset="image-hero-desktop.png">
+        <img src="image-hero-mobile.png">
+      </picture>
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

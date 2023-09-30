@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.nav{
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+   
+    
+}
+.overlay {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    display: none;
+    z-index: 4; /* Set this value to be lower than the dropdown z-index */
+}
+
+.overlay.active {
+    display: block;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.part1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    width: 600px;
+    height: 100%;
+}
+.feat,.Comp{
+    width: 110px;
+    box-sizing: border-box;
+    
+}
+.featuresfield,.companyfield{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 21px;
+    
+}
+
+
+.feacl,.comcl{
+    width: 13px;
+    padding: 0;
+    margin-left: 5px;
+    position: relative;
+}
+
+#option,#options{
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+    list-style: none;
+}
+#option p,#options p{
+    margin-left: 4px;
+}
+#list,#comlist{
+    margin-top: 10px;
+    position: absolute;
+    
+}
+
+.hide,.comhide{
+    display: none;
+   
+}
+
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+   
+}
+
+a{
+    text-decoration: none;
+}
+.register{
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+}
+.login{
+    color: black;
+}
+.toggle_btn{
+    display: none;
+}
+.dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 60px;
+    height: 100%;
+    padding: 20px;
+    width: 250px;
+    display: none;
+    z-index: 5;
+    background-color: whitesmoke;
+}
+.dropdown.open{
+    display: block;
+}
+.dropdown .feat,.dropdown .Comp{
+    width: 100px;
+    position: relative;
+}
+.dropdown .featuresfield{
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+}
+.dropdown .companyfield{
+    width: 100%;
+    position: absolute;
+    padding-bottom: 20px;
+}
+
+.dropdown .register{
+    text-align: center;
+    border: none;
+    
+}
+.dropdown .register p{
+    border: 2px solid black;
+    padding: 12px;
+    border-radius: 30px;
+    margin: 0;
+    
+}
+
+.dropdown .companyfield{
+    position: relative;
+
+}   
+.dropdown .comlist{
+    position: absolute;
+}
+    
+.dropdown .list,.dropdown .comlist{
+    position: relative;
+}
+.dropdown #options:hover,.dropdown #option:hover{
+    background-color: rgb(188, 125, 125);
+}
+.dropdown .careers,.dropdown .about,.dropdown .login,.dropdown .register{
+    margin: 15px 0;
+}
+
+.dropdown .hide,.dropdown .comhide{
+    display: none;   
+}
+
+.container{
+    width: 100%;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin: auto auto;
+    gap: 2.5vw;
+    height: 100vh;
+    padding: 0;
+    
+}
+.left{
+    width: 50%;
+    
+}
+.left h1{
+    font-size: 4.8vw;
+    margin-bottom: 2.8vw;
+    color: hsl(0, 0%, 8%);
+}
+.left .para{
+    font-size: 1.3vw;
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 4vw;
+}
+.left a{
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    padding: 1.2vw;
+    border-radius: 10px;
+    font-size: 1.1vw;
+}
+.photoes{
+    margin-top: 4vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photoes img{
+    width: 6.3vw;
+}
+.right{
+    width: 50%;
+    
+}
+.right img{
+    width: 100%;
+    
+}
+@media (max-width:1326px) {
+    .container{
+        width: 90%;
+    }
+    .left{
+        width: 55%;
+    }
+    .left h1{
+        font-size:5.1vw;
+        margin-bottom: 3vw;
+    }
+    .left .para{
+        font-size: 1.3vw;
+        margin-bottom: 5vw;
+    }
+    .right{
+        width: 45%;
+    }
+    .right img{
+        width: 34vw;
+    }
+    .photoes img{
+        width: 8vw;
+        margin-top: 3.4vw;
+    }
+    .left a{
+        padding: 1.6vw;
+        margin-bottom: 3vw;
+    }
+}
+@media (max-width:1185px){
+    .container{
+        max-width: 80%;
+    }
+    .left h1{
+        font-size: 6vw;
+        margin-bottom: 4vw;
+    }
+    .left .para{
+        font-size: 2vw;
+        margin-bottom: 4vw;
+    }
+    .left a{
+        font-size: 1.5vw;
+    }
+    
+    
+}
+@media (max-width:1110px){
+    .container{
+        width: 95%;
+        
+    }
+    .left{
+        width: 55%;
+    }
+    .left h1{
+        font-size: 6.2vw;
+        margin-bottom: 5vw;
+    }
+    .left .para{
+        font-size: 2.3vw;
+    }
+    .left a{
+        font-size: 2vw;
+        padding: 1.7vw;
+    }
+    .right{
+        width: 45%;
+    }
+    .right img{
+        width: 40vw;
+    }
+    .photoes img{
+        width: 9vw;
+    }}
+@media (max-width:980px) {
+    .container{
+        width: 100%;
+    }
+    
+    .left .para{
+        margin-bottom: 6vw;
+    }
+    
+}
+@media (max-width:826px) {
+.part2 .login,.part2 .register,.part1 .featuresfield,.part1 .companyfield,.part1 .about,.part1 .careers{
+    display: none;
+    
+}
+    .toggle_btn{
+        display: block;
+        position: absolute;
+        right: 23px;
+    }
+    .logo{
+        position: absolute;
+        left: 23px;
+
+    }
+    body{
+        width: 100%;
+        
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        margin-top: 60px;
+        flex-direction: column-reverse;
+        width: 100%;
+        min-width: 80%;
+        height: 100%;
+        gap: 0;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .left{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .right img{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+   
+    .left h1{
+        font-size: 10vw;
+        margin: 4vw 0; 
+    }
+    .left .para{
+        font-size: 3vw;
+        margin: 8vw 0;
+    }
+    .left a{
+        padding: 2vw 4vw;
+        font-size: 3vw;
+    }
+    .photoes img{
+        width: 15vw;
+    }
+ }
+@media (max-width:480px) {
+    .body{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        min-width: 96%;
+        margin-top: 30px;
+    }
+    .left{
+        
+        padding: 20px;
+    }
+    .left h1{
+        font-size: 13vw;
+        margin: 30px 0;
+    }
+    .left .para{
+        font-size: 4vw;
+        margin: 30px 0;
+        margin-bottom: 80px;
+    }
+    .left a{
+
+        font-size: 5vw;
+        padding: 3vw;
+    }
+    .photoes img{
+        width: 20vw;
+        margin-top: 70px ;
+    }
+
+}
+
+@media (max-width:326px) {
+    .dropdown{
+        width: 100%;
+        max-width: 70%;
+    }
+}
